@@ -1,1 +1,15 @@
 julia 0.6
+
+MAT
+CSV
+DataFrames
+Rematch
+MATLAB
+StaticArrays
+CoordinateTransformations
+Dierckx
+Unitful 0.8.0
+Plots
+Distributions
+Missings
+DataStructures
