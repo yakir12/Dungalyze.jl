@@ -1,4 +1,4 @@
-julia 0.6
+julia 0.7
 
 MAT
 CSV
@@ -8,8 +8,7 @@ MATLAB
 StaticArrays
 CoordinateTransformations
 Dierckx
-Unitful 0.8.0
+Unitful
 Plots
 Distributions
-Missings
 DataStructures
