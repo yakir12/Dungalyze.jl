@@ -174,7 +174,7 @@ end
 
 
 const win = 50
-function plot_search(data::Matrix{Float64}, title::String)
+function plot_search(data, title)
     d = fit(DiagNormal, data)
     σ = sqrt.(var(d))
     fwhm = 2sqrt(2log(2))*σ

@@ -5,11 +5,14 @@ module Dungalyze
 # include(joinpath(Pkg.dir("Dungalyze"), "src", "calibrations.jl"))
 # include(joinpath(Pkg.dir("Dungalyze"), "src", "turning_point.jl"))
 
+using LinearAlgebra, SparseArrays
+include("/home/yakir/.juliaold/v0.6/Dungalyze/src/types.jl")
+include("/home/yakir/.juliaold/v0.6/Dungalyze/src/plots.jl")
+include("/home/yakir/.juliaold/v0.6/Dungalyze/src/checks.jl")
 
-
-include(joinpath(Pkg.dir("Dungalyze"), "src", "types.jl"))
-include(joinpath(Pkg.dir("Dungalyze"), "src", "plots.jl"))
-include(joinpath(Pkg.dir("Dungalyze"), "src", "checks.jl"))
+# include(joinpath(Pkg.dir("Dungalyze"), "src", "types.jl"))
+# include(joinpath(Pkg.dir("Dungalyze"), "src", "plots.jl"))
+# include(joinpath(Pkg.dir("Dungalyze"), "src", "checks.jl"))
 
 home = "/home/yakir/google-drive/.shared/Coffee beetle experiments"
 figfolder = "dungalyze figures"

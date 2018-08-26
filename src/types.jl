@@ -1,5 +1,6 @@
 using CSV, DataFrames, Rematch, MATLAB, StaticArrays, CoordinateTransformations, Dierckx, Unitful
 
+
 abstract type AbstractExperiment end
 
 abstract type PresentOrgNest <: AbstractExperiment end
@@ -130,7 +131,7 @@ end
 
 const factor_filename = "factors.csv"
 
-function get_calibration(path::String, calibfile::String)
+function get_calibration(path, calibfile)
     name, ext = splitext(calibfile)
     return @match ext begin
         ".calib" => Calib(joinpath(path, calibfile))
