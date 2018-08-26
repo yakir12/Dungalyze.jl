@@ -1,4 +1,4 @@
-using Plots, Distributions, Missings, DataStructures
+using Plots, Distributions, DataStructures
 import Plots:plot
 # pgfplots()
 gr()
@@ -184,7 +184,7 @@ function plot_search(data::Matrix{Float64}, title::String)
     μx, μy = round.(Int, mean(d))
     scatter!(mean(d)[1:1], mean(d)[2:2], label="gravity (x, y): $μx cm, $μy cm", color=:green, markersize=8)
     t = linspace(0, 2pi, 100)'
-    xy = mean(d) .+ fwhm/2.*[cos.(t); sin.(t)]
+    xy = mean(d) .+ fwhm./2*[cos.(t); sin.(t)]
     fwhmx, fwhmy = round.(Int, fwhm)
     plot!(xy[1,:], xy[2,:], label="FWHM (x, y): $fwhmx cm, $fwhmy cm", color=:green, markersize=8)
     plot!(background_color_inside="black", aspect_ratio=1, xlim=(-win,win), ylim=(-win,win), colorbar=false, title=title, legend=false)
